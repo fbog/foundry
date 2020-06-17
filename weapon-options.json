@@ -1,0 +1,963 @@
+{
+	"_meta": {
+		"sources": [{
+			"json": "weapon-actions",
+			"abbreviation": "WA",
+			"full": "Weapon Actions",
+			"authors": [
+				"MWC"
+			],
+			"version": "1.0.0",
+			"targetSchema": "1.0.0"
+		}],
+		"dateAdded": 0
+	},
+	"variantrule": [{
+		"name": "Weapon Actions",
+		"source": "MWC",
+		"entries": [
+			"Each weapon has a unique property or unique action you may perform in place of an attack you would normally make or a reaction after a specific event occurs. These actions are made available by a character's proficiency or expertise with a weapon. A character with proficiency with a certain weapon may perform the action listed under the proficionecy column in the Weapon Actions table. A character with expertise with a certain weapon may perform the action listed under the expertise column in the Weapon Actions table.",
+
+			"{@b These actions do not affect formless, incorporeal, swarm, or similar types of enemies. Additionally, these actions cannot target enemies which differ by more than one size category from your character.}",
+			"Some of your weapon actions require your target to make a saving throw to resist the action's effects. The saving throw DC is calculated as follows:",
+			{
+				"type": "abilityDc",
+				"name": "Weapon Action",
+				"attributes": [
+					"str",
+					"dex"
+				]
+			}, {
+				"type": "table",
+				"caption": "Weapon Actions",
+				"colLabels": [
+					"Name",
+					"Damage Type Action",
+					"Proficiency Action",
+					"Expertise Action"
+				],
+				"colStyles": [
+					"col-xs-4"
+				],
+				"rows": [
+					[
+						"{@i Simple Melee Weapons}",
+						"",
+						"",
+						""
+					],
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Club|phb}",
+							"Slowing Strike",
+							"Bruising Strike",
+							"Disarming Parry"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Dagger|phb}",
+							"Pinning Strike",
+							"Main Gauche",
+							"Hidden Strike"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Greatclub|phb}",
+							"Slowing Strike",
+							"Guardbreaker",
+							"Destructive Swing"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Handaxe|phb}",
+							"Embedding Strike",
+							"Driving Strike",
+							"Heavy Throw"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Javelin|phb}",
+							"Pinning Strike",
+							"Running Start",
+							"Phalanx"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Light hammer|phb}",
+							"Slowing Strike",
+							"Bruising Strike",
+							"Dazing Strike"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Mace|phb}",
+							"Slowing Strike",
+							"Guardbreaker",
+							"Dazing Strike"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Quarterstaff|phb}",
+							"Slowing Strike",
+							"Harry",
+							"Vault"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Sickle|phb}",
+							"Embedding Strike",
+							"Hooked Blade",
+							"Tripping Strike"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Spear|phb}",
+							"Pinning Strike",
+							"Thrusting Strike",
+							"Phalanx"
+						]
+					},
+					[
+						"{@i Simple Ranged Weapons}",
+						"",
+						"",
+						""
+					],
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item light crossbow|phb|Crossbow, light}",
+							"Pinning Strike",
+							"Aim",
+							"Hone In"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Dart|phb}",
+							"Pinning Strike",
+							"Hidden Strike",
+							"Silent Strike"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Shortbow|phb}",
+							"Pinning Strike",
+							"Distracting Shot",
+							"Quickdraw"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Sling|phb}",
+							"Slowing Strike",
+							"Determined Throw",
+							"Blinding Strike"
+						]
+					},
+					[
+						"{@i Martial Melee Weapons}",
+						"",
+						"",
+						""
+					],
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Battleaxe|phb}",
+							"Embedding Strike",
+							"Crippling Strike",
+							"Paralyzing Strike"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Flail|phb}",
+							"Slowing Strike",
+							"Strip item",
+							"Tripping Strike"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Glaive|phb}",
+							"Embedding Strike",
+							"Harry",
+							"Disarming Parry"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Greataxe|phb}",
+							"Embedding Strike",
+							"Cleave",
+							"Headsman's Chop"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Greatsword|phb}",
+							"Embedding Strike",
+							"Grinding Halt",
+							"Arcing Slash"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Halberd|phb}",
+							"Embedding Strike",
+							"Spear Tip",
+							"Rebuff"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Lance|phb}",
+							"Pinning Strike",
+							"Mounted Charge",
+							"Masterful Lancer"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Longsword|phb}",
+							"Embedding Strike",
+							"Lock Blades",
+							"Defensive Posture"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Maul|phb}",
+							"Slowing Strike",
+							"Hurling Impact",
+							"Crushing Blow"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Morningstar|phb}",
+							"Pinning Strike",
+							"Bruising Strike",
+							"Stunning Blow"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Pike|phb}",
+							"Pinning Strike",
+							"Defensive Ready",
+							"Charge"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Rapier|phb}",
+							"Pinning Strike",
+							"Main Droite",
+							"Armor Breaker"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Scimitar|phb}",
+							"Embedding Strike",
+							"Bleeding Strike",
+							"Whirlwind Charge"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Shortsword|phb}",
+							"Pinning Strike",
+							"Close Quarters Combat",
+							"Backstab"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Trident|phb}",
+							"Pinning Strike",
+							"Restraining Strike",
+							"Disarming Parry"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item War pick|phb}",
+							"Pinning Strike",
+							"Armor Breaker",
+							"Tripping Strike"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Warhammer|phb}",
+							"Slowing Strike",
+							"Guardbreaker",
+							"Sunder Weapon"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Whip|phb}",
+							"Special",
+							"Strip Item",
+							"Snaring Strike"
+						]
+					},
+					[
+						"{@i Martial Ranged Weapons}",
+						"",
+						"",
+						""
+					],
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Blowgun|phb}",
+							"Special",
+							"Poisoned Darts",
+							"Silent Strike"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item hand crossbow|phb|Crossbow, hand}",
+							"Pinning Strike",
+							"Aim",
+							"Rapid Shot"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item heavy crossbow|phb|Crossbow, heavy}",
+							"Pinning Strike",
+							"Aim",
+							"Armor Breaker"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Longbow|phb}",
+							"Pinning Strike",
+							"Distracting Shot",
+							"Overdraw"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Net|phb}",
+							"Special",
+							"Wing Catcher",
+							"Graceful Throw"
+						]
+					},
+					[
+						"Other Weapons",
+						"",
+						"",
+						""
+					],
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Pistol|dmg}",
+							"Slowing Strike",
+							"Armor Breaker",
+							"Quickdraw"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"{@item Musket|dmg}",
+							"Slowing Strike",
+							"Armor Breaker",
+							"Death from Above"
+						]
+					},
+					{
+						"type": "row",
+						"style": "row-indent-first",
+						"row": [
+							"Garrote",
+							"Special",
+							"Strangle",
+							"Improved Strangle"
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Actions",
+				"entries": [
+					"Each weapon has special actions that may be performed corresponding to the Weapon Actions table.",
+					{
+						"type": "entries",
+						"entries": [{
+								"type": "entries",
+								"name": "Aim",
+								"entries": [
+									"If you have not moved yet in your turn, you may choose to reduce your speed to 0 until the end of your turn. If you do, you gain a +2 bonus to attack rolls made with this weapon until the end of your turn."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Arcing Slash",
+								"entries": [
+									"When you attack with this weapon, you may choose to target two creatures within your reach with a single attack. This attack uses the same attack roll for both targets and deals slashing damage equal to 1d6 plus your Strength modifier to each target"
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Armor Breaker",
+								"entries": [
+									"When you make an attack roll with advantage, you ignore AC bonuses from non-magic armor (still include any Dex bonus to AC). If your weapon is magic, ignore AC from magic armor as well."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Backstab",
+								"entries": [
+									"When attacking with advantage, if both attack rolls would hit, add bonus piercing damage equal to your ability modifier to the resulting damage roll."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Blade Lock",
+								"entries": [
+									"As a reaction to being targeted by an attack within melee range, you may try to lock weapons with that creature. Make an attack roll, and if your attack roll exceeds the enemy’s attack roll, their weapon locks with yours. The target makes a strength saving throw. On a failure, their speed becomes 0 while holding this weapon, and they may not perform any more attacks with this weapon until it is freed by repeating the saving throw. You may not perform attacks with this weapon while it is locked in this way, and you may end the lock as a free action."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Bleeding Strike ",
+								"entries": [
+									"As an attack you may inflict a bleeding strike. On a hit, the target takes slashing damage equal to your damage modifier value. At the start of their next turn, the target suffers 1d6 slashing damage. This damage continues until the target succeeds on a Con saving throw or a Medicine check against your DC as an action. A target may only suffer from one bleeding strike at a time."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Blinding Strike",
+								"entries": [
+									"When you attack with advantage, you may attempt a blinding strike. On a hit, the creature takes damage equal to your ability modifier, and it must make a dexterity saving throw. On failure, the target is blinded until the end of its next turn."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Bruising Strike ",
+								"entries": [
+									"As an attack, you may attempt to perform a bruising blow. If the attack hits, it deals damage equal to your ability modifier, and the target must make a Constitution saving throw. On a failure, the target does not add its Dexterity modifier to its AC until it is treated with a DC 10 Wisdom (Medicine) check."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Charge",
+								"entries": [
+									"If you move 20 feet or more towards an enemy before making a melee attack, you add 1 additional weapon die to the resulting damage roll."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Cleave",
+								"entries": [
+									"When a melee attack made with this weapon reduces an undamaged creature to 0 hit points, any excess damage from that attack might carry over to another creature nearby. The attacker targets another creature within reach and, if the original attack roll can hit it, applies any remaining damage to it. If that creature was undamaged and is likewise reduced to 0 hit points, repeat this process, carrying over the remaining damage until there are no valid targets, or until the damage carried over fails to reduce an undamaged creature to 0 hit points."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Close Quarters Combat ",
+								"entries": [
+									"When you successfully grapple a creature or escape a grapple, you may make a single attack with a short sword as a bonus action. Additionally, whenever a creature fails to escape a grapple with you, you may make a single attack with a short sword as a reaction."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Crippling Strike ",
+								"entries": [
+									"When you attack, you may choose to invoke a crippling strike. On a hit, the target takes damage equal to your ability modifier and makes a Con saving throw. On a failure, the target has disadvantage on attack rolls and saving throws until the end of its next turn."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Crushing Blow",
+								"entries": [
+									"If you attack with advantage, you may choose to attempt to perform a  crushing blow. If the attack hits, the target’s AC is permanently reduced by 1 until its armor is repaired, but it cannot be reduced below 10 + the target’s Dexterity modifier. This attack has no effect on creatures with magical armor unless your weapon is also magical."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Death from Above",
+								"entries": [
+									"When you fire from a higher vantage point than your target, you have advantage on that attack roll."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Defensive Posture",
+								"entries": [
+									"When you take the dodge action, you gain a +2 bonus to AC while wielding this weapon."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Defensive Ready ",
+								"entries": [
+									"If an enemy moves 20 feet or more towards you and you make a readied attack as a reaction, the resulting attack is a critical hit if it lands and the target must make a strength saving throw or fall prone."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Destructive Strike",
+								"entries": [
+									"When attacking a creature, you may choose to attack at disadvantage. If you hit, you deal an additional weapon die in the resulting damage roll."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Determined Throw ",
+								"entries": [
+									"When you roll an attack roll with advantage against a creature two sizes larger or more than you, if both attacks would hit, the attack is a critical hit."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Disarming Parry",
+								"entries": [
+									"As a reaction against an enemy attacking you with a weapon attack, you may attempt to catch their weapon with your tines and disarm them. Roll an attack roll against theirs, and if your is higher, the attack roll automatically misses, and they must make a strength saving throw, on a failure you disarm them and choose where the weapon falls within 5 feet of you."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Distracting Shot ",
+								"entries": [
+									"You may take the help action with this weapon to distract an enemy even when you are not adjacent to that enemy as long as that enemy is within range of your weapon. This action uses 1 unit of ammunition."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Driving Strike ",
+								"entries": [
+									"When you successfully perform an embedding strike with this weapon, the target has disadvantage on opportunity attack rolls until it is removed, and opportunity attacks are made with advantage against them."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Embedding Strike",
+								"entries": [
+									"When attacking with advantage, you may choose to embed your weapon in a target. You deal damage equal to your ability modifier. The creature makes a Con saving throw. On a failure, the weapon is embedded. The creature suffers opportunity actions when making an attack while your weapon is embedded. The creature may use an action to dislodge the weapon. If you are holding your weapon embedded in a creature, you must move with them to maintain your grip, otherwise you let go (you are not considered grappling the creature). You may dislodge your weapon or let go of your weapon at any time."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Graceful Throw",
+								"entries": [
+									"You do not suffer disadvantage when throwing this weapon at long range or within melee reach."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Grinding Halt ",
+								"entries": [
+									"Whenever you must make a Strength saving throw to avoid being moved against your will, you can dig this weapon into the ground as a reaction. Roll 2d6 and add the number rolled to the saving throw. If the effect pushing you does not have a saving throw, you move 5 feet fewer."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Guardbreaker",
+								"entries": [
+									"As an attack option, you may attempt to guard break an opponent. On a hit, other creatures gain a +2 attack bonus against the creature until the start of the creature’s next turn, and the creature may not gain any bonuses from a defensive stance."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Harry",
+								"entries": [
+									"When you use the help action to give advantage to the next attack targeting a creature, the advantage lasts until the end of the creature’s next turn."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Headsman's Chop",
+								"entries": [
+									"When attacking creature that is prone add bonus damage equal to your ability modifier to damage roll (minimum of 1)."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Heavy Throw",
+								"entries": [
+									"If you have both hands available to throw this weapon, your damage die is a d8 with the thrown weapon."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Hidden Strike ",
+								"entries": [
+									"When you hit with an attack using this weapon while hidden, the resulting hit is a critical hit."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Hone In",
+								"entries": [
+									"When you hit a creature with an attack made with this weapon, the next attack made with this weapon gains a +2 bonus to the attack roll."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Hooked Blade ",
+								"entries": [
+									"You may perform a grapple action using a hand holding this weapon as if it was a free hand."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Hurling Impact ",
+								"entries": [
+									"If you attack with advantage, you may choose to attempt to hurl your opponent with a mighty swing. On a hit, the target takes damage equal to your ability modifier and makes a strength saving throw. On a failure, you push the target 15 feet."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Improved Strangle",
+								"entries": [
+									"Your escape DC for the strangle action is increased by your proficiency modifier (this means you add twice your proficiency modifier to the DC calculation)."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Main Droite ",
+								"entries": [
+									"When an enemy misses with a melee attack against you, you may use your reaction to inflict piercing damage on them equal to your melee attack ability modifier (minimum of 1). If you know the riposte maneuver, you may use this as part of your reaction as well."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Main Gauche ",
+								"entries": [
+									"When an enemy within melee range attacks you, you may use your reaction to add 1d4 to your AC. If the enemy still hits you and you know the parry maneuver, you may use that as well."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Masterful Lancer",
+								"entries": [
+									"While mounted, you do not suffer disadvantage when attacking a creature within 5 feet of you/your mount."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Mounted Charge",
+								"entries": [
+									"If you move 20 feet or more towards an enemy before making a melee attack, you add 1 additional weapon die to the resulting damage roll. In addition if you successfully hit an opponent after moving 20 feet or more while mounted, the resulting hit is a critical hit."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Overdraw",
+								"entries": [
+									"You may use your strength modifier for calculating attack and damage bonuses while using this weapon. When attacking a creature, you may choose to attack at disadvantage. If you hit, you deal an additional weapon die in the resulting damage roll."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Paralyzing Strike",
+								"entries": [
+									"When you attack with advantage, you may choose to invoke a paralyzing strike. On a hit, the target takes damage equal to your ability modifier and if both rolls would hit, the target makes a Con saving throw. On a failure, the target is paralyzed until the end of its next turn."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Phalanx",
+								"entries": [
+									"While two other allies are adjacent to you, you add an additional weapon die on damage rolls made with this weapon when hitting with a melee attack."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Pinning Strike",
+								"entries": [
+									"When attacking with advantage, you may choose to try and pin target. You deal damage equal to your ability modifier and pin the target using your weapon. You may not attack with this weapon while it is pinning a creature, unless the weapon has the ammunition property."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Poisoned Darts ",
+								"entries": [
+									"A character with a poisoner’s kit (50 gp) can spend a short rest creating one of the following simple poisons. Applying a poison to a blowgun dart is a bonus action, and each vial of poison has 10 uses before it must be created again. A poison’s effects are in addition to the 1 piercing damage dealt by a blow dart.",
+									"{\b Deathtoad Toxin.} A creature hit by a dart coated with this poison must make a DC 10 Constitution saving throw. On a failure, it takes 2d6 poison damage.",
+									"{\b Chuul Ichor.} A creature hit by a dart coated with this poison must make a DC 10 Constitution saving throw. On a failure, it is paralyzed until the beginning of its next turn.",
+									"{\b Svirfneblin Wooziness Tonic.} A creature hit by a dart coated with this poison must make a DC 10 Constitution saving throw. On a failure, it is poisoned until the end of its next turn."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Quickdraw",
+								"entries": [
+									"When out of combat, you have advantage to gain surprise over an enemy using a contested ability check to draw and fire your weapon first."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Rapid Shot",
+								"entries": [
+									"If you make a weapons attack and are able to reload, you may make 3 attacks instead with a -5 penalty to each attack roll."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Rebuff",
+								"entries": [
+									"When you perform the shove action, you may shove up to two adjacent creatures."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Restraining Strike ",
+								"entries": [
+									"As an attack action against a prone target, you may attempt to pin and restrain the creature by driving your trident to the ground. Roll an attack roll against the creature’s AC, on a hit, the target takes damage equal to your ability modifier (minimum of 1) and is restrained, and your trident is held toward the ground. The creature may make a strength saving throw to escape."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Running Start ",
+								"entries": [
+									"If you move at least 20 feet or more before throwing a javelin, you deal 1 additional weapon die in the resulting damage roll."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Silent Strike",
+								"entries": [
+									"When you attack with this weapon while hidden, you are not revealed, but the target will know the general direction of the attack."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Slowing Strike",
+								"entries": [
+									"When attacking with advantage, you may choose to slow your target. On a hit, you deal damage equal to your ability modifier, the target creature can no longer use its reaction, and the target's speed is reduced by half."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Snaring Strike",
+								"entries": [
+									"As an attack action, you may snap your weapon around a creature. It must make a Strength saving throw or be restrained. It may repeat this saving throw at the end of each of its turns. You cannot make attacks with this weapon until the restrained condition is ended."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Spear Tip ",
+								"entries": [
+									"You may choose to attack with the spear head for piercing damage instead of slashing damage."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Strangle",
+								"entries": [
+									"You perform a special grapple attack against a target on which you have advantage. On a hit, the target is grappled and begins suffocating. The target may perform an escape action with acrobatics or athletics against your save DC."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Strip Item ",
+								"entries": [
+									"As an attack action, you may attempt to strip a targets weapon. It must make a Strength saving throw or lose its weapon. You may drop the weapon anywhere within 5 feet of where you stand.",
+
+									"If you use the disarming attack maneuver, the creature has disadvantage to save against that attack maneuver, and you may choose to drop the weapon anywhere within 5 feet of where you stand."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Stunning Blow",
+								"entries": [
+									"If you attack with advantage, you may attempt to attempt to stun a creature. On a hit, the creature takers damage equal to your ability modifier and makes a Con saving throw. On a failure, the creature is stunned until the end of the creature’s next turn."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Sunder Weapon",
+								"entries": [
+									"As a reaction against an enemy making an attack roll with a weapon, you may roll an attack roll yourself. If your attack roll exceeds their attack roll, the attack automatically misses. In addition, the enemy’s weapon suffers a -1 penalty to attack rolls. If the weapon suffers a total of a -3 penalty to attacks, the weapon is broken and may only be used as an improvised attack. This does not work against a magic weapon unless your weapon is also a magic weapon."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Thrusting Strike ",
+								"entries": [
+									"When you roll with advantage against a target, you may perform a thrusting attack. On a hit, the target receives damage equal to your ability modifier (minimum of 1), and the target makes a constitution saving throw. On a failure, the target has a -2 penalty to attack rolls until the end of their next turn."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Tripping Strike",
+								"entries": [
+									"As an action, you may make a melee attack. On a hit, you deal damage equal to your melee ability modifier (minimum of 1), and the target rolls a strength saving throw. On a failure, the target falls prone.",
+									"If you use the trip maneuver, the target has disadvantage on the saving throw."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Vault",
+								"entries": [
+									"As part of your move action you may vault with your weapon to increase your jump height by 10 feet."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Whirlwind Charge",
+								"entries": [
+									"While mounted, you deal an additional 2 weapon dice in damage if you move 20 feet or more before hitting with an attack."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Wing Catcher ",
+								"entries": [
+									"Instead of restraining a flying creature, you may entangle its wings with a weapon. A huge or smaller winged creature hit by a net when you use this ability has its fly speed reduced to 0 (but is not restrained) until it frees itself."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Special",
+								"entries": [
+									" A weapon with the special property has unusual rules governing its use, explained in the weapon's description (see \"Special Weapons\" later in this section)."
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"name": "Special Weapons",
+						"entries": [
+							"Weapons with special rules are described here.",
+							{
+								"type": "entries",
+								"name": "Whip",
+								"entries": [
+									"With a whip, you may perform an action to attempt to wrap it around a suitable object 10 feet away to perform some type of athletic/acrobatic maneuver like climbing or swinging."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Blowgun",
+								"entries": [
+									"With a blowgun, you may easily conceal this item, and sleight of hand checks made to hide this from the eyes of passersby are made at advantage."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Net",
+								"entries": [
+									"With a net, you may perform a wisdom (survival) check out of combat to set up a trap contested against a target's passive perception."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Garrote",
+								"entries": [
+									"With a garrote, you may not perform a standard attack. You may only perform the strangle attack when you have advantage on the attack roll."
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"type": "entries",
+				"name": "Improvised Attacks with Weapon Expertise",
+				"entries": [
+					"Upon gaining expertise with a weapon, improvised attacks made with that weapon are done with proficiency. The damage rolled will be at least 1 damage class lower than the base damage of that weapon. For example, gripping the greatsword by the blade and pummeling someone with the hilt would be an attack with proficiency with a damage roll of 1d10 bludgeoning assuming that character is an expert with a greatsword. Likewise, if that character took a thrusting stance and drove that sword forward to do piercing damage. That damage would be 1d10 piercing damage. The minimum damage roll can be 1d4, but note that not all weapons can be improvised to change damage type. It is based on what would be a logical and reasonable attack. So, a club might not do slashing damage, but it might do piercing if the grip was sharpened at the end. In regards to polearm master, a polearm improvised attack with expertise might deal 1d8 bludgeoning damage while the bonus action attack from the feat would deal 1d4 bludgeoning. Because, the pummel was performed as an improvised action, it gets higher damage dice under this rule."
+				]
+			}
+		]
+	}]
+}
